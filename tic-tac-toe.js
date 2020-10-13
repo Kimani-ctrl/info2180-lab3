@@ -28,7 +28,13 @@ window.onload = function(event){
                     event.target.classList.add('X');
                     event.target.textContent='X';
                 }
-            }   
+            } 
+         i[n].onmouseover=function(event){
+             event.target.classList.add('hover');
+         }  
+         i[n].onmouseout=function(event){
+             event.target.classList.remove('hover');
+         }
         }
 }
 
